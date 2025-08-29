@@ -1,0 +1,41 @@
+{
+  "name": "posy-profits",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "vite",
+    "electron": "electron .",
+    "build": "vite build",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.posyprofits.costapp",
+    "productName": "Posy Profits",
+    "files": [
+      "dist/**/*",
+      "main.js",
+      "preload.js"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": ["x64"]
+        }
+      ]
+    }
+  },
+  "devDependencies": {
+    "electron": "^29.0.0",
+    "electron-builder": "^24.6.0"
+  },
+  "dependencies": {
+    "jspdf": "^2.5.1",
+    "html2canvas": "^1.4.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}
