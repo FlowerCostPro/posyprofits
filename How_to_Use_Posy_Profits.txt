@@ -1,0 +1,14 @@
+Posy Profits - How to Use
+
+1. Download and unzip the bundle.
+2. In the project root, run:
+   npm install
+   npm run build
+   npm run dist
+3. The portable .exe will be generated in the dist folder.
+4. Double-click the executable to launch the Posy Profits app.
+5. In the app:
+   - Add items (flowers, vases, etc.)
+   - Enter your wholesale cost and markup %
+   - View auto-calculated retail prices
+   - Click 'Export to PDF' to save or print estimates
